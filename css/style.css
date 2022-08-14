@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  transition: all 0.8s; }
+  @media (max-width: 800px) {
+    html {
+      font-size: 52.5%;
+      transition: all 0.8s; } }
+  @media (max-width: 650px) {
+    html {
+      transition: all 0.8s;
+      font-size: 48%; } }
+  @media (min-width: 1600px) {
+    html {
+      transition: all 0.8s;
+      font-size: 70%; } }
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  background-color: #f2ebe3;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh; }
+
+.product-container {
+  width: 75rem;
+  height: 55rem;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px; }
+  @media (max-width: 650px) {
+    .product-container {
+      width: 35rem;
+      height: auto; } }
+
+.product__img {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-image: url(../images/image-product-desktop.jpg);
+  background-size: 100%; }
+  @media (max-width: 650px) {
+    .product__img {
+      background-image: url(../images/image-product-mobile.jpg);
+      width: 100%;
+      height: 25rem;
+      float: none;
+      background-size: cover; } }
+
+.product__text-box {
+  width: 50%;
+  height: 100%;
+  float: right;
+  padding: 5rem;
+  background-color: white; }
+  .product__text-box > * {
+    margin-bottom: 2.5rem; }
+  @media (max-width: 650px) {
+    .product__text-box {
+      width: 100%;
+      float: none;
+      padding: 3rem; }
+      .product__text-box > * {
+        margin-bottom: 1.5rem; } }
+
+.product__heading-primary {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: #6c7289; }
+
+.product__heading-secondary {
+  font-size: 3.5rem;
+  font-family: "Fraunces";
+  font-weight: 700;
+  color: #1c232b; }
+  @media (max-width: 650px) {
+    .product__heading-secondary {
+      font-size: 2.8rem; } }
+
+.product__description {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #6c7289; }
+
+.product__price-box > * {
+  margin-right: 2.3rem; }
+
+.product__price-discount {
+  font-size: 3.5rem;
+  color: #3c8067;
+  font-family: "Fraunces"; }
+
+.product__price-orginal {
+  font-size: 1.5rem;
+  color: #6c7289;
+  vertical-align: super;
+  font-family: inherit; }
+
+.product__btn {
+  position: relative;
+  transition: all 0.3s; }
+  .product__btn:hover {
+    transform: translateY(-5px); }
+  .product__btn-icon {
+    position: absolute;
+    top: 35%;
+    left: 22%;
+    width: 1.8rem;
+    height: auto;
+    z-index: 10; }
+  .product__btn-text:link, .product__btn-text:visited {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #3c8067;
+    padding: 1.8rem 1.6rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s; }
+    .product__btn-text:link:hover, .product__btn-text:visited:hover {
+      box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.2);
+      background-color: #1c232b; }
+
+.attribution {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  text-align: center; }
+  .attribution a {
+    text-decoration: none; }
